@@ -61,7 +61,7 @@ footer .note{margin:0; color:var(--muted); font-size:14px}
 h2{border-bottom:1px solid #ded9cb;padding-bottom:8px;text-transform:none;letter-spacing:.04em;font-size:14px}
 .card{background:#fbfaf4d9;border:1px solid #ded9cb;border-radius:6px;padding:20px;backdrop-filter:blur(8px);box-shadow:0 2px 5px rgba(0,0,0,.07)}
 body::before{content:'';display:block;height:5px;background:#5f6f4a;position:sticky;top:0;z-index:9}
-body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background-image:radial-gradient(#ded9cb 1px, transparent 1px);background-size:22px 22px}
+background-image:radial-gradient(#ded9cb 1px, transparent 1px);background-size:22px 22px;
 </style>
 </head>
 <body>
@@ -76,7 +76,7 @@ body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;back
 
 <section class="about" id="about">
   <h2>关于</h2>
-  <p>分布式追踪的时钟漂移这件事，值得有人把它讲明白。 当前以硕士阶段研究角色的方式推进项目。</p>
+  <p>分布式追踪的时钟漂移这件事，值得有人把它讲明白。</p>
   <ul class="traits">
     <li>先给能跑的东西，再讲原理。</li>
     <li>文档里能给命令就不给截图。</li>
@@ -89,20 +89,12 @@ body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;back
   <div class="grid two">
     <article class="card">
       <h3>分布式追踪的时钟漂移里常见的误判模式</h3>
-      <span class="status">持续跟进</span>
     </article>
     <article class="card">
       <h3>分布式追踪的时钟漂移的判定依据与复核方式</h3>
-      <span class="status">持续跟进</span>
     </article>
     <article class="card">
       <h3>分布式追踪的时钟漂移里容易误判的情形与反例</h3>
-      <span class="status">持续跟进</span>
-    </article>
-    <article class="card">
-      <h3>在推进的问题</h3>
-      <p>（分布式追踪的时钟漂移场景）如何避免把分布式追踪的时钟漂移的噪声当成信号？用抽样与样本量分析给出误判模式的判别特征。</p>
-      <span class="status">进行中</span>
     </article>
   </div>
 </section>
@@ -112,9 +104,6 @@ body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;back
   <ul class="repos">
     <li><div class="name"><a href="https://github.com/sfugaj/clockdrift" rel="noopener">clockdrift</a></div>
       <div class="desc">按结构键把条目聚类，标出分布式追踪的时钟漂移上的同组项与各组的代表样本</div>
-    </li>
-    <li><div class="name"><a href="https://github.com/sfugaj/sampling_ablation_matrix_04131d02" rel="noopener">sampling_ablation_matrix_04131d02</a></div>
-      <div class="desc">（分布式追踪的时钟漂移场景）如何避免把分布式追踪的时钟漂移的噪声当成信号？用抽样与样本量分析给出误判模式的判别特征。</div>
     </li>
   </ul>
 </section>
